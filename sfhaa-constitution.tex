@@ -1,5 +1,25 @@
 \documentclass[10pt]{mk-articles-of-association}
 
+\setlist[enumerate,2]{label={(\arabic*)}}
+
+
+\newcommand{\mysection}[1]{
+  \end{enumerate}
+  \section*{#1}
+  \begin{enumerate}[resume]
+}
+
+\newcommand{\mysubsection}[1]{
+  \end{enumerate}
+  \subsection*{#1}
+  \begin{enumerate}[resume]
+}
+
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\bfseries}
+
+\titlespacing*{\subsection}{0pt}{*3}{10pt}
+
 \newcommand{\EC}[0]{Board}
 \newcommand{\Exec}[0]{\EC{} }
 \newcommand{\RA}[0]{Residents' Organisation}
@@ -25,14 +45,14 @@ Company No 13176148\\
 \medskip
 Incorporated: 1 February 2021 \\
 \medskip
-Articles updated by special resolution on 21~February~2021 and 29~March~2022
+Articles updated by special resolution on 21~February~2021 and 24~August~2022
 \end{center}
 
 
 
-\section{Applicability of Model Articles}
+\section*{Applicability of Model Articles}
 
-\begin{constenum}
+\begin{enumerate}
 
 \item The Model Articles provided for in law shall apply to the
   Association, except insofar as they are modified, excluded or
@@ -45,33 +65,31 @@ Articles updated by special resolution on 21~February~2021 and 29~March~2022
   or re-enactment of it for the time being in force.
 
 \item The following Model Articles shall not apply to the Association:
-  \begin{constenum}
+  \begin{enumerate}
   \item Model Article 2 --- liability of members
   \item Model Article 16 --- rules
   \item Model Article 21 --- applications for membership
   \item Model Article 35 --- company seals
   \item Model Article 36 --- inspections
-  \end{constenum}
+  \end{enumerate}
 
 \item The following Model Article provisions shall apply to the Association
   as though for ``member'' they stated ``Full Member'':
 
-  \begin{constenum}
+  \begin{enumerate}
   \item Model Article 2 --- liability of members
   \item Model Article 4 --- reserve powers
   \item Model Article 25 --- chairing general meetings
-  \end{constenum}
+  \end{enumerate}
 
-\end{constenum}
+\mysection{Definitions}
 
-\section{Definitions}
-
-Unless the context indicates another meaning, words or expressions
+\item Unless the context indicates another meaning, words or expressions
 defined in these Articles shall bear the same meaning as in the
 Companies Act 2006 as it was in force on the date when the company was
-incorporated:
+incorporated, \ITand:
 
-  \begin{constenum}
+  \begin{enumerate}
 
     \definition{Association}{the company established with these articles};
 
@@ -114,22 +132,22 @@ incorporated:
       the relevant freeholder or tribunal};
 
     \definition{\RA}{a membership organisation
-      \begin{constenum}
+      \begin{enumerate}
         \item generally comprising residents or others with a connection
           to a definite location larger than a block of flats,
         \item whose purposes effectively include the advancement of
           the interests of its members by virtue of their common
           connection to the location;
-      \end{constenum}
+      \end{enumerate}
     }
 
     \definition{Right to Manage company}{a company which
-      \begin{constenum}
+      \begin{enumerate}
         \item is an ``RTM company'' as defined in section 73 of the
           Commonhold and Leasehold Reform Act 2002, \ITand
         \item which is controlled by the leaseholders of said
           premises, or at least such subset as are its members;
-      \end{constenum}
+      \end{enumerate}
     }
 
     \definition{RTA}{\RTA};
@@ -139,16 +157,15 @@ incorporated:
 
     \definition{UK}{the United Kingdom of Great Britain and Northern Ireland}.
 
-  \end{constenum}
+  \end{enumerate}
 
 
 
-\section{Objects}
-\begin{constenum}
+\mysection{Objects}
 
 \item The Objects of the Association shall be:
-
-  \begin{constenum}
+  \label{legit}
+  \begin{enumerate}
 
   \item the phasing out of residential leasehold within the Catchment
     Area, with compensation only for the freeholders' legitimate
@@ -175,22 +192,22 @@ incorporated:
   \item the promotion of the interests, both of the Members and the
     general public in the UK, in relation to Housing Problems.
 
-  \end{constenum}
+  \end{enumerate}
 
 
 \item In the furtherance of its Objects, the Association shall
-\begin{constenum}
+\begin{enumerate}
 
   \item collect, organise, store and publish information about
     Housing Problems in the Catchment Area;
 
   \item solicit information towards and maintain Registers of
-    \begin{constenum}
+    \begin{enumerate}
     \item \LAFA, \ITand
     \item instances of such Abuses and other Housing Problems within
       Catchment Area,
     \item proposed reforms to alleviate said Problems;
-    \end{constenum}
+    \end{enumerate}
 
   \item encourage the formation of, registration of and participation
     in \RTA{}s where such bodies do not already exist, or where they
@@ -207,11 +224,12 @@ incorporated:
 
   \item do all other such lawful things as conduce to the attainment
     of the Association's Objects.
-\end{constenum}
+\end{enumerate}
 
-\item For the purposes of this article, the legitimate property interests of
-  the freeholder in a given estate shall be held to exclude:
-  \begin{constenum}
+\item For the purposes of \articleref{legit}, the legitimate property
+  interests of the freeholder in a given estate shall be held to
+  exclude:
+  \begin{enumerate}
     \item the monetary value of future variable service charge income
       (and of future administration charge income) in excess of what
       that estate's unitholders would pay if they could freely choose
@@ -219,23 +237,23 @@ incorporated:
     \item in the context of forfeiture, the value of the remaining equity in a
       leaseholder's property after settlement of debts to the freeholder or
       other parties to the lease.
-  \end{constenum}
+  \end{enumerate}
 
 \item Except in so far as it would indirectly further the Association's own
   Objects, the Association shall refrain from involvement in or the conduct of
-  \begin{constenum}
+  \begin{enumerate}
   \item planning applications as such, except in so far as they relate
     to Housing Problems;
   \item the core activities of \RA{}s, except in so far as they
     relate to Housing Problems;
-  \end{constenum}
+  \end{enumerate}
 
 \item Even where it would further the Association's Objects, the Association
   shall refrain from involvement in or the conduct of
-  \begin{constenum}
+  \begin{enumerate}
   \item social events; \ITand
   \item community building.
-  \end{constenum}
+  \end{enumerate}
 
 \item \avoiddoubt, discrimination on any basis generally held to be
   impermissible in the UK is contrary to the Objects of the
@@ -244,30 +262,28 @@ incorporated:
 \item The Association shall not be suffered to operate in
   a party-political manner.
 
-\end{constenum}
-
 
 
-\section{Non-Distribution}
+\mysection{Non-Distribution}
 
+\item
   The income and property of the Association howsoever derived shall be
   applied solely in promoting the Association’s Objects. No distribution shall
   be paid or capital otherwise returned to the Members in cash or otherwise.
   However, nothing in this Constitution shall prevent any payment in good
   faith by the Association of:
-  \begin{constenum}
+  \begin{enumerate}
   \item duly authorised, reasonable and proper remuneration to any Member,
     officer or servant of the Association for any services rendered to the
     Association;
   \item any interest on money lent by any Member at a reasonable and proper
     rate; \ITor
   \item reasonable out-of-pocket expenses properly incurred by a Member.
-  \end{constenum}
+  \end{enumerate}
 
 
 
-\section{\Exec}
-  \begin{constenum}
+\mysection{\Exec}
 
   \item The Association shall have a governing body which shall be
     known as the ``\EC{}'', or ``Board of Directors''. Individual
@@ -285,7 +301,7 @@ incorporated:
     shall not delegate or assign, the exclusive power to do the
     following:\label{nondelegation}
 
-    \begin{constenum}
+    \begin{enumerate}
       \item making Bye Laws for the Association;
 
       \item the expulsion or suspension of Members;
@@ -298,7 +314,7 @@ incorporated:
 
       \item co-opting additional Full Members as members of the \EC{}.
 
-    \end{constenum}
+    \end{enumerate}
 
   \item The \Exec may alter the name of the Association.
 
@@ -322,19 +338,15 @@ incorporated:
     the Association's Objects, nor shall they suffer unauthorised individuals
     to purport to represent the Association.
 
-\end{constenum}
-
-
-\section{Membership}
-  \begin{constenum}
+\mysection{Membership}
 
   \item There shall be three classes of membership, which shall be mutually
     exclusive:
-    \begin{constenum}
+    \begin{enumerate}
       \item Full Members,
       \item Honorary Members, \ITand
       \item Registered Supporters.
-    \end{constenum}
+    \end{enumerate}
 
   \item Membership shall not be transferable to anyone or anything else.
 
@@ -362,31 +374,26 @@ incorporated:
     shall be re-registered as an Honorary Member, subject to any
     saving provisions or exceptions provided for by the Bye Laws.
 
-\end{constenum}
 
-
-
-\section{Qualifications for Membership}
-
-\begin{constenum}
+\mysection{Qualifications for Membership}
 
   \item Membership shall be open to other individuals or organisations that
-    \begin{constenum}
+    \begin{enumerate}
       \item make an application to join in the form required by the \EC, \ITand
       \item are approved by the \EC{}, at its sole discretion.
-    \end{constenum}
+    \end{enumerate}
 
   \item Only natural persons shall be admitted to Honorary Membership.
 
   \item Membership of the Association shall be restricted to
-    \begin{constenum}
+    \begin{enumerate}
     \item natural persons,
     \item \RTA{}s, \ITand
     \item Right To Manage companies.
-    \end{constenum}
+    \end{enumerate}
 
   \item It shall be a qualification for Membership that a Member
-    \begin{constenum}
+    \begin{enumerate}
 
     \item agree to be a Member and abide by the requirements of
       Membership, including agreement to provide contact details and
@@ -398,7 +405,7 @@ incorporated:
     \item have the legal form of a natural person, an unincorporated
       association or a UK-registered company limited by guarantee.
 
-    \end{constenum}
+    \end{enumerate}
 
   \item For the purposes of determining if an organisation is
     qualified to be a Member, the \Exec may treat as though it were a
@@ -409,17 +416,11 @@ incorporated:
   \item An applicant for membership who is a natural person may not be
     admitted as a Full Member unless the applicant is a unitholder.
 
-\end{constenum}
-
-
-
-\section{Termination or Refusal of Membership}
-
-\begin{constenum}
+\mysection{Termination or Refusal of Membership}
 
   \item
     Membership shall cease when
-    \begin{constenum}
+    \begin{enumerate}
       \item a Member dies or ceases to exist,
       \item when he, she or it no longer qualifies to be a Member,
       \item when expelled pursuant to \articleref{expulsion},
@@ -430,7 +431,7 @@ incorporated:
         fewer than two Full Members, \ITor{}
       \item any sum due from the Member to the Association is not paid in full
         within six months of it falling due.
-    \end{constenum}
+    \end{enumerate}
 
 \item Membership shall be terminated if
 \label{expulsion}
@@ -439,7 +440,7 @@ incorporated:
   her Membership be terminated. A resolution to remove a Member from
   Membership may only be passed if
 
-\begin{constenum}
+\begin{enumerate}
 
 \item the Member has been given at least twenty-one clear days' notice in
   writing of the meeting of the \Exec at which the resolution will
@@ -449,28 +450,24 @@ incorporated:
   representative (who need not be a Member of the Association) has been
   allowed to make representations to the meeting.
 
-\end{constenum}
+\end{enumerate}
 
 \item The \Exec may deem a Member's membership to have lapsed where
   the Member has, despite reasonable efforts by the Association, not
   responded to contact attempts for more than six months.
   \label{lapse}
 
-\end{constenum}
-
 
-\section{Councils}
-\label{councils}
+\mysection{Councils}
 
-The \EC{} may establish by Bye Laws bodies which
+\item The \EC{} may establish by Bye Laws bodies which
   shall be styled as ``Councils'' to represent particular interests, and
   such Bye Laws may provide for such Councils to appoint persons to
-  the \EC{}.
+  the \EC{}.\label{councils}
 
 
-\section{Bye Laws}
 
-\begin{constenum}
+\mysection{Bye Laws}
 
 \item The \Exec may from time to time make such reasonable and proper
   rules, to be termed ``Bye Laws'', as they may deem necessary or
@@ -486,7 +483,7 @@ The \EC{} may establish by Bye Laws bodies which
 \item The Bye Laws may regulate the following matters but shall not be
   restricted to them:
 
-\begin{constenum}
+\begin{enumerate}
 
 \item the admission of Members of the Association (including the admission
   of organisations to Membership) and the rights and privileges of
@@ -511,7 +508,7 @@ The \EC{} may establish by Bye Laws bodies which
 \item generally, all such matters as are commonly the subject matter
   of company rules.
 
-\end{constenum}
+\end{enumerate}
 
 \item The Association in general meeting shall have the power to
   alter, add to or repeal the rules or Bye Laws.
@@ -523,19 +520,17 @@ The \EC{} may establish by Bye Laws bodies which
   Association. No Bye Law shall be inconsistent with, or shall
   alter, repeal or subvert anything contained in these Articles or
   the Companies Act 2006.
-\end{constenum}
-
 
 
-\section{Winding Up}
+\mysection{Winding Up}
 
-On the merger of the Association with any other body, or the
+\item On the merger of the Association with any other body, or the
   winding-up or dissolution of the Association, after provision has
   been made for all its debts and liabilities, any assets or property
   that remains available to be distributed or paid shall not be paid
   or distributed to the Members (except to a Member that qualifies
   under this Article) but shall be transferred to Leasehold Knowledge
   Partnership Ltd (company number: 08999652; charity number: 1162584).
-
+\end{enumerate}
 
 \end{document}
