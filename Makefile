@@ -5,4 +5,4 @@ $(NAME).pdf: $(NAME).tex
 	pdflatex $<
 
 clean:
-	rm -f $(NAME).pdf *.ps *.dvi *.aux *.log
+	rm -f $(NAME).pdf *.ps *.dvi *.aux *.log *.out
