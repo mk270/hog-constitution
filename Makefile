@@ -1,7 +1,8 @@
+NAME := sfhaa-constitution
 
-sfhaa-constitution.pdf: sfhaa-constitution.tex
+$(NAME).pdf: $(NAME).tex
 	pdflatex $<
 	pdflatex $<
 
 clean:
-	rm -f sfhaa-constitution.pdf *.ps *.dvi *.aux *.log
+	rm -f $(NAME).pdf *.ps *.dvi *.aux *.log
