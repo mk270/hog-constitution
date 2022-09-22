@@ -1,4 +1,4 @@
-NAME := sfhaa-constitution
+NAME := hog-articles
 
 $(NAME).pdf: $(NAME).tex
 	pdflatex $<
